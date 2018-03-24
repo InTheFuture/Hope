@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133AA83527B3BA71BB098989 /* libPods-socialSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B52AD5C4721CCBC4276E4C40 /* libPods-socialSecurity.a */; };
 		A6FD1CAF206684A4002C1BA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD1CAE206684A4002C1BA1 /* AppDelegate.m */; };
 		A6FD1CB2206684A4002C1BA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD1CB1206684A4002C1BA1 /* ViewController.m */; };
 		A6FD1CB5206684A4002C1BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD1CB3206684A4002C1BA1 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FC06980568AAD34A88B1456 /* Pods-socialSecurity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialSecurity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialSecurity/Pods-socialSecurity.debug.xcconfig"; sourceTree = "<group>"; };
 		A6FD1CAA206684A4002C1BA1 /* socialSecurity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialSecurity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FD1CAD206684A4002C1BA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6FD1CAE206684A4002C1BA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		A6FD1CB9206684A4002C1BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6FD1CBB206684A4002C1BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6FD1CBC206684A4002C1BA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B52AD5C4721CCBC4276E4C40 /* libPods-socialSecurity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-socialSecurity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3120DAE628C482471A8A098 /* Pods-socialSecurity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialSecurity.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialSecurity/Pods-socialSecurity.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133AA83527B3BA71BB098989 /* libPods-socialSecurity.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04147E3237D8E951E3FDEC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B52AD5C4721CCBC4276E4C40 /* libPods-socialSecurity.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B053C946002FC7FDCBCD597 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FC06980568AAD34A88B1456 /* Pods-socialSecurity.debug.xcconfig */,
+				F3120DAE628C482471A8A098 /* Pods-socialSecurity.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6FD1CA1206684A4002C1BA1 = {
 			isa = PBXGroup;
 			children = (
 				A6FD1CAC206684A4002C1BA1 /* socialSecurity */,
 				A6FD1CAB206684A4002C1BA1 /* Products */,
+				2B053C946002FC7FDCBCD597 /* Pods */,
+				04147E3237D8E951E3FDEC07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6FD1CC0206684A4002C1BA1 /* Build configuration list for PBXNativeTarget "socialSecurity" */;
 			buildPhases = (
+				87D01884AB357B503BC24AEC /* [CP] Check Pods Manifest.lock */,
 				A6FD1CA6206684A4002C1BA1 /* Sources */,
 				A6FD1CA7206684A4002C1BA1 /* Frameworks */,
 				A6FD1CA8206684A4002C1BA1 /* Resources */,
+				5EFD52EE80A4A6C4D8E3D86C /* [CP] Embed Pods Frameworks */,
+				CAE5157D94572DF2B6988CC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EFD52EE80A4A6C4D8E3D86C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-socialSecurity/Pods-socialSecurity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87D01884AB357B503BC24AEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-socialSecurity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAE5157D94572DF2B6988CC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-socialSecurity/Pods-socialSecurity-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6FD1CA6206684A4002C1BA1 /* Sources */ = {
@@ -276,6 +354,7 @@
 		};
 		A6FD1CC1206684A4002C1BA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC06980568AAD34A88B1456 /* Pods-socialSecurity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +368,7 @@
 		};
 		A6FD1CC2206684A4002C1BA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3120DAE628C482471A8A098 /* Pods-socialSecurity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
