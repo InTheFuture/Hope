@@ -19,6 +19,10 @@
 		A656938420677BF30098FDF3 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A656938320677BF30098FDF3 /* UIImage+Extension.m */; };
 		A656938820678ACF0098FDF3 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A656938720678ACF0098FDF3 /* BaseViewModel.m */; };
 		A656938B20678AEB0098FDF3 /* HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A656938A20678AEB0098FDF3 /* HomeViewModel.m */; };
+		A6DF1D102067DE3800282F60 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DF1D0F2067DE3800282F60 /* NetWorkManager.m */; };
+		A6EBA9632067C3FD008C6F61 /* PushTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EBA9622067C3FD008C6F61 /* PushTool.m */; };
+		A6EBA9732067C638008C6F61 /* LoginInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EBA9722067C638008C6F61 /* LoginInViewController.m */; };
+		A6EBA9762067CB9C008C6F61 /* UITool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EBA9752067CB9C008C6F61 /* UITool.m */; };
 		A6FD1CAF206684A4002C1BA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD1CAE206684A4002C1BA1 /* AppDelegate.m */; };
 		A6FD1CB5206684A4002C1BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD1CB3206684A4002C1BA1 /* Main.storyboard */; };
 		A6FD1CB7206684A4002C1BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FD1CB6206684A4002C1BA1 /* Assets.xcassets */; };
@@ -52,6 +56,14 @@
 		A656938720678ACF0098FDF3 /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		A656938920678AEB0098FDF3 /* HomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewModel.h; sourceTree = "<group>"; };
 		A656938A20678AEB0098FDF3 /* HomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewModel.m; sourceTree = "<group>"; };
+		A6DF1D0E2067DE3800282F60 /* NetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
+		A6DF1D0F2067DE3800282F60 /* NetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
+		A6EBA9612067C3FD008C6F61 /* PushTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushTool.h; sourceTree = "<group>"; };
+		A6EBA9622067C3FD008C6F61 /* PushTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushTool.m; sourceTree = "<group>"; };
+		A6EBA9712067C638008C6F61 /* LoginInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginInViewController.h; sourceTree = "<group>"; };
+		A6EBA9722067C638008C6F61 /* LoginInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginInViewController.m; sourceTree = "<group>"; };
+		A6EBA9742067CB9C008C6F61 /* UITool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITool.h; sourceTree = "<group>"; };
+		A6EBA9752067CB9C008C6F61 /* UITool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITool.m; sourceTree = "<group>"; };
 		A6FD1CAA206684A4002C1BA1 /* socialSecurity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialSecurity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FD1CAD206684A4002C1BA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6FD1CAE206684A4002C1BA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -358,6 +370,12 @@
 		A6CE43542067677D008BD882 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				A6EBA9612067C3FD008C6F61 /* PushTool.h */,
+				A6EBA9622067C3FD008C6F61 /* PushTool.m */,
+				A6EBA9742067CB9C008C6F61 /* UITool.h */,
+				A6EBA9752067CB9C008C6F61 /* UITool.m */,
+				A6DF1D0E2067DE3800282F60 /* NetWorkManager.h */,
+				A6DF1D0F2067DE3800282F60 /* NetWorkManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -379,6 +397,47 @@
 				A656937720676A670098FDF3 /* HeaderFile.h */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		A6EBA9692067C61E008C6F61 /* 登录注册 */ = {
+			isa = PBXGroup;
+			children = (
+				A6EBA96A2067C61E008C6F61 /* Controller */,
+				A6EBA96B2067C61E008C6F61 /* Model */,
+				A6EBA96C2067C61E008C6F61 /* View */,
+				A6EBA96D2067C61E008C6F61 /* ViewModel */,
+			);
+			path = "登录注册";
+			sourceTree = "<group>";
+		};
+		A6EBA96A2067C61E008C6F61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6EBA9712067C638008C6F61 /* LoginInViewController.h */,
+				A6EBA9722067C638008C6F61 /* LoginInViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6EBA96B2067C61E008C6F61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6EBA96C2067C61E008C6F61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6EBA96D2067C61E008C6F61 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A6FD1CA1206684A4002C1BA1 = {
@@ -405,6 +464,7 @@
 				A6FD1CAD206684A4002C1BA1 /* AppDelegate.h */,
 				A6FD1CAE206684A4002C1BA1 /* AppDelegate.m */,
 				A6FD1CBB206684A4002C1BA1 /* Info.plist */,
+				A6EBA9692067C61E008C6F61 /* 登录注册 */,
 				A65327A7206766B8003E9678 /* 首页 */,
 				A6532798206766B8003E9678 /* 客服 */,
 				A653279D206766B8003E9678 /* 资讯 */,
@@ -560,6 +620,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FD1CBD206684A4002C1BA1 /* main.m in Sources */,
+				A6DF1D102067DE3800282F60 /* NetWorkManager.m in Sources */,
+				A6EBA9732067C638008C6F61 /* LoginInViewController.m in Sources */,
 				A656938820678ACF0098FDF3 /* BaseViewModel.m in Sources */,
 				A6569367206768070098FDF3 /* BaseViewController.m in Sources */,
 				A6569373206768930098FDF3 /* ToolViewController.m in Sources */,
@@ -570,8 +632,10 @@
 				A6FD1CAF206684A4002C1BA1 /* AppDelegate.m in Sources */,
 				A656936A206768210098FDF3 /* HomeViewController.m in Sources */,
 				A656938B20678AEB0098FDF3 /* HomeViewModel.m in Sources */,
+				A6EBA9632067C3FD008C6F61 /* PushTool.m in Sources */,
 				A656938420677BF30098FDF3 /* UIImage+Extension.m in Sources */,
 				A6569376206768A00098FDF3 /* MineViewController.m in Sources */,
+				A6EBA9762067CB9C008C6F61 /* UITool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

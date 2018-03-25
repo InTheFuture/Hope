@@ -20,6 +20,9 @@
     UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
     topView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:topView];
+    
+    
+    [MGJRouter openURL:@"mgj://PushTool/ViewController" withUserInfo:@{@"ControllerName": @"LoginInViewController"} completion:nil];
 }
 
 @end
