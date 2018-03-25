@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		133AA83527B3BA71BB098989 /* libPods-socialSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B52AD5C4721CCBC4276E4C40 /* libPods-socialSecurity.a */; };
+		69DEDE57290C906354DD9260 /* Pods_socialSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AF89AC51C0B5FC75044353 /* Pods_socialSecurity.framework */; };
+		A6569367206768070098FDF3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6569366206768070098FDF3 /* BaseViewController.m */; };
+		A656936A206768210098FDF3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6569369206768210098FDF3 /* HomeViewController.m */; };
+		A656936D206768480098FDF3 /* CustomerServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A656936C206768480098FDF3 /* CustomerServiceViewController.m */; };
+		A6569370206768870098FDF3 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A656936F206768870098FDF3 /* NewsViewController.m */; };
+		A6569373206768930098FDF3 /* ToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6569372206768930098FDF3 /* ToolViewController.m */; };
+		A6569376206768A00098FDF3 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6569375206768A00098FDF3 /* MineViewController.m */; };
+		A656937A20676E5F0098FDF3 /* BaseTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A656937920676E5F0098FDF3 /* BaseTabbarController.m */; };
+		A656937D20676E7F0098FDF3 /* BaseNavigtionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A656937C20676E7F0098FDF3 /* BaseNavigtionController.m */; };
+		A656938420677BF30098FDF3 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A656938320677BF30098FDF3 /* UIImage+Extension.m */; };
+		A656938820678ACF0098FDF3 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A656938720678ACF0098FDF3 /* BaseViewModel.m */; };
+		A656938B20678AEB0098FDF3 /* HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A656938A20678AEB0098FDF3 /* HomeViewModel.m */; };
 		A6FD1CAF206684A4002C1BA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD1CAE206684A4002C1BA1 /* AppDelegate.m */; };
-		A6FD1CB2206684A4002C1BA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD1CB1206684A4002C1BA1 /* ViewController.m */; };
 		A6FD1CB5206684A4002C1BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD1CB3206684A4002C1BA1 /* Main.storyboard */; };
 		A6FD1CB7206684A4002C1BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FD1CB6206684A4002C1BA1 /* Assets.xcassets */; };
 		A6FD1CBA206684A4002C1BA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD1CB8206684A4002C1BA1 /* LaunchScreen.storyboard */; };
@@ -18,17 +28,38 @@
 
 /* Begin PBXFileReference section */
 		4FC06980568AAD34A88B1456 /* Pods-socialSecurity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialSecurity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialSecurity/Pods-socialSecurity.debug.xcconfig"; sourceTree = "<group>"; };
+		53AF89AC51C0B5FC75044353 /* Pods_socialSecurity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialSecurity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6569365206768070098FDF3 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A6569366206768070098FDF3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A6569368206768210098FDF3 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A6569369206768210098FDF3 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A656936B206768480098FDF3 /* CustomerServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomerServiceViewController.h; sourceTree = "<group>"; };
+		A656936C206768480098FDF3 /* CustomerServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomerServiceViewController.m; sourceTree = "<group>"; };
+		A656936E206768870098FDF3 /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		A656936F206768870098FDF3 /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		A6569371206768930098FDF3 /* ToolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolViewController.h; sourceTree = "<group>"; };
+		A6569372206768930098FDF3 /* ToolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolViewController.m; sourceTree = "<group>"; };
+		A6569374206768A00098FDF3 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		A6569375206768A00098FDF3 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		A656937720676A670098FDF3 /* HeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFile.h; sourceTree = "<group>"; };
+		A656937820676E5F0098FDF3 /* BaseTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabbarController.h; sourceTree = "<group>"; };
+		A656937920676E5F0098FDF3 /* BaseTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarController.m; sourceTree = "<group>"; };
+		A656937B20676E7F0098FDF3 /* BaseNavigtionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigtionController.h; sourceTree = "<group>"; };
+		A656937C20676E7F0098FDF3 /* BaseNavigtionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigtionController.m; sourceTree = "<group>"; };
+		A656938220677BF30098FDF3 /* UIImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		A656938320677BF30098FDF3 /* UIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		A656938620678ACF0098FDF3 /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		A656938720678ACF0098FDF3 /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		A656938920678AEB0098FDF3 /* HomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewModel.h; sourceTree = "<group>"; };
+		A656938A20678AEB0098FDF3 /* HomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewModel.m; sourceTree = "<group>"; };
 		A6FD1CAA206684A4002C1BA1 /* socialSecurity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialSecurity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FD1CAD206684A4002C1BA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6FD1CAE206684A4002C1BA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A6FD1CB0206684A4002C1BA1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A6FD1CB1206684A4002C1BA1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A6FD1CB4206684A4002C1BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6FD1CB6206684A4002C1BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6FD1CB9206684A4002C1BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6FD1CBB206684A4002C1BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6FD1CBC206684A4002C1BA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B52AD5C4721CCBC4276E4C40 /* libPods-socialSecurity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-socialSecurity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3120DAE628C482471A8A098 /* Pods-socialSecurity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialSecurity.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialSecurity/Pods-socialSecurity.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				133AA83527B3BA71BB098989 /* libPods-socialSecurity.a in Frameworks */,
+				69DEDE57290C906354DD9260 /* Pods_socialSecurity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +78,7 @@
 		04147E3237D8E951E3FDEC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B52AD5C4721CCBC4276E4C40 /* libPods-socialSecurity.a */,
+				53AF89AC51C0B5FC75044353 /* Pods_socialSecurity.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -59,6 +90,295 @@
 				F3120DAE628C482471A8A098 /* Pods-socialSecurity.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6532793206766B8003E9678 /* 我 */ = {
+			isa = PBXGroup;
+			children = (
+				A6532794206766B8003E9678 /* Controller */,
+				A6532795206766B8003E9678 /* Model */,
+				A6532796206766B8003E9678 /* View */,
+				A6532797206766B8003E9678 /* ViewModel */,
+			);
+			path = "我";
+			sourceTree = "<group>";
+		};
+		A6532794206766B8003E9678 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6569374206768A00098FDF3 /* MineViewController.h */,
+				A6569375206768A00098FDF3 /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6532795206766B8003E9678 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6532796206766B8003E9678 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6532797206766B8003E9678 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A6532798206766B8003E9678 /* 客服 */ = {
+			isa = PBXGroup;
+			children = (
+				A6532799206766B8003E9678 /* Controller */,
+				A653279A206766B8003E9678 /* Model */,
+				A653279B206766B8003E9678 /* View */,
+				A653279C206766B8003E9678 /* ViewModel */,
+			);
+			path = "客服";
+			sourceTree = "<group>";
+		};
+		A6532799206766B8003E9678 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A656936B206768480098FDF3 /* CustomerServiceViewController.h */,
+				A656936C206768480098FDF3 /* CustomerServiceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A653279A206766B8003E9678 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A653279B206766B8003E9678 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A653279C206766B8003E9678 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A653279D206766B8003E9678 /* 资讯 */ = {
+			isa = PBXGroup;
+			children = (
+				A653279E206766B8003E9678 /* Controller */,
+				A653279F206766B8003E9678 /* Model */,
+				A65327A0206766B8003E9678 /* View */,
+				A65327A1206766B8003E9678 /* ViewModel */,
+			);
+			path = "资讯";
+			sourceTree = "<group>";
+		};
+		A653279E206766B8003E9678 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A656936E206768870098FDF3 /* NewsViewController.h */,
+				A656936F206768870098FDF3 /* NewsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A653279F206766B8003E9678 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A65327A0206766B8003E9678 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A65327A1206766B8003E9678 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A65327A2206766B8003E9678 /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				A65327A3206766B8003E9678 /* Controller */,
+				A65327A4206766B8003E9678 /* Model */,
+				A65327A5206766B8003E9678 /* View */,
+				A65327A6206766B8003E9678 /* ViewModel */,
+			);
+			path = "工具";
+			sourceTree = "<group>";
+		};
+		A65327A3206766B8003E9678 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6569371206768930098FDF3 /* ToolViewController.h */,
+				A6569372206768930098FDF3 /* ToolViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A65327A4206766B8003E9678 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A65327A5206766B8003E9678 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A65327A6206766B8003E9678 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A65327A7206766B8003E9678 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				A65327A8206766B8003E9678 /* Controller */,
+				A65327A9206766B9003E9678 /* Model */,
+				A65327AA206766B9003E9678 /* View */,
+				A65327AB206766B9003E9678 /* ViewModel */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		A65327A8206766B8003E9678 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6569368206768210098FDF3 /* HomeViewController.h */,
+				A6569369206768210098FDF3 /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A65327A9206766B9003E9678 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A65327AA206766B9003E9678 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A65327AB206766B9003E9678 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A656938920678AEB0098FDF3 /* HomeViewModel.h */,
+				A656938A20678AEB0098FDF3 /* HomeViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A6569361206767F00098FDF3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A656938520678AB50098FDF3 /* VieModel */,
+				A6569362206767F00098FDF3 /* Controller */,
+				A6569363206767F00098FDF3 /* Model */,
+				A6569364206767F00098FDF3 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A6569362206767F00098FDF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6569365206768070098FDF3 /* BaseViewController.h */,
+				A6569366206768070098FDF3 /* BaseViewController.m */,
+				A656937820676E5F0098FDF3 /* BaseTabbarController.h */,
+				A656937920676E5F0098FDF3 /* BaseTabbarController.m */,
+				A656937B20676E7F0098FDF3 /* BaseNavigtionController.h */,
+				A656937C20676E7F0098FDF3 /* BaseNavigtionController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6569363206767F00098FDF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6569364206767F00098FDF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A656938120677BD20098FDF3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A656938220677BF30098FDF3 /* UIImage+Extension.h */,
+				A656938320677BF30098FDF3 /* UIImage+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A656938520678AB50098FDF3 /* VieModel */ = {
+			isa = PBXGroup;
+			children = (
+				A656938620678ACF0098FDF3 /* BaseViewModel.h */,
+				A656938720678ACF0098FDF3 /* BaseViewModel.m */,
+			);
+			path = VieModel;
+			sourceTree = "<group>";
+		};
+		A6CE43542067677D008BD882 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		A6CE43552067677D008BD882 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD1CBC206684A4002C1BA1 /* main.m */,
+				A6FD1CB3206684A4002C1BA1 /* Main.storyboard */,
+				A6FD1CB6206684A4002C1BA1 /* Assets.xcassets */,
+				A6FD1CB8206684A4002C1BA1 /* LaunchScreen.storyboard */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A6CE43562067677D008BD882 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A656937720676A670098FDF3 /* HeaderFile.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		A6FD1CA1206684A4002C1BA1 = {
@@ -84,13 +404,17 @@
 			children = (
 				A6FD1CAD206684A4002C1BA1 /* AppDelegate.h */,
 				A6FD1CAE206684A4002C1BA1 /* AppDelegate.m */,
-				A6FD1CB0206684A4002C1BA1 /* ViewController.h */,
-				A6FD1CB1206684A4002C1BA1 /* ViewController.m */,
-				A6FD1CB3206684A4002C1BA1 /* Main.storyboard */,
-				A6FD1CB6206684A4002C1BA1 /* Assets.xcassets */,
-				A6FD1CB8206684A4002C1BA1 /* LaunchScreen.storyboard */,
 				A6FD1CBB206684A4002C1BA1 /* Info.plist */,
-				A6FD1CBC206684A4002C1BA1 /* main.m */,
+				A65327A7206766B8003E9678 /* 首页 */,
+				A6532798206766B8003E9678 /* 客服 */,
+				A653279D206766B8003E9678 /* 资讯 */,
+				A65327A2206766B8003E9678 /* 工具 */,
+				A6532793206766B8003E9678 /* 我 */,
+				A6569361206767F00098FDF3 /* Base */,
+				A6CE43562067677D008BD882 /* Common */,
+				A656938120677BD20098FDF3 /* Category */,
+				A6CE43552067677D008BD882 /* Config */,
+				A6CE43542067677D008BD882 /* Tool */,
 			);
 			path = socialSecurity;
 			sourceTree = "<group>";
@@ -171,9 +495,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-socialSecurity/Pods-socialSecurity-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MGJRouter/MGJRouter.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGJRouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -220,9 +559,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6FD1CB2206684A4002C1BA1 /* ViewController.m in Sources */,
 				A6FD1CBD206684A4002C1BA1 /* main.m in Sources */,
+				A656938820678ACF0098FDF3 /* BaseViewModel.m in Sources */,
+				A6569367206768070098FDF3 /* BaseViewController.m in Sources */,
+				A6569373206768930098FDF3 /* ToolViewController.m in Sources */,
+				A656936D206768480098FDF3 /* CustomerServiceViewController.m in Sources */,
+				A656937D20676E7F0098FDF3 /* BaseNavigtionController.m in Sources */,
+				A656937A20676E5F0098FDF3 /* BaseTabbarController.m in Sources */,
+				A6569370206768870098FDF3 /* NewsViewController.m in Sources */,
 				A6FD1CAF206684A4002C1BA1 /* AppDelegate.m in Sources */,
+				A656936A206768210098FDF3 /* HomeViewController.m in Sources */,
+				A656938B20678AEB0098FDF3 /* HomeViewModel.m in Sources */,
+				A656938420677BF30098FDF3 /* UIImage+Extension.m in Sources */,
+				A6569376206768A00098FDF3 /* MineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,9 +706,12 @@
 			baseConfigurationReference = 4FC06980568AAD34A88B1456 /* Pods-socialSecurity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FFHWVYEQ2;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = /Users/huanliu/Desktop/socialSecurity/socialSecurity/Common/HeaderFile.h;
 				INFOPLIST_FILE = socialSecurity/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -375,9 +727,12 @@
 			baseConfigurationReference = F3120DAE628C482471A8A098 /* Pods-socialSecurity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FFHWVYEQ2;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = /Users/huanliu/Desktop/socialSecurity/socialSecurity/Common/HeaderFile.h;
 				INFOPLIST_FILE = socialSecurity/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "BaseTabbarController.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    self.window.backgroundColor = White;
+    BaseTabbarController *tabBarVC = [[BaseTabbarController alloc] init];
+    self.window.rootViewController = tabBarVC;
+    [self.window makeKeyAndVisible];
+    //设置状态栏样式为白色
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
     return YES;
 }
 
