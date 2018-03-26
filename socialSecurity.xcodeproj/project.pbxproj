@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		69DEDE57290C906354DD9260 /* Pods_socialSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AF89AC51C0B5FC75044353 /* Pods_socialSecurity.framework */; };
+		A61A557320691A20005B1CF0 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A61A557220691A20005B1CF0 /* UIView+Utils.m */; };
+		A61A557620692250005B1CF0 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A61A557520692250005B1CF0 /* UIColor+Util.m */; };
 		A6569367206768070098FDF3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6569366206768070098FDF3 /* BaseViewController.m */; };
 		A656936A206768210098FDF3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6569369206768210098FDF3 /* HomeViewController.m */; };
 		A656936D206768480098FDF3 /* CustomerServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A656936C206768480098FDF3 /* CustomerServiceViewController.m */; };
@@ -33,6 +35,10 @@
 /* Begin PBXFileReference section */
 		4FC06980568AAD34A88B1456 /* Pods-socialSecurity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialSecurity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialSecurity/Pods-socialSecurity.debug.xcconfig"; sourceTree = "<group>"; };
 		53AF89AC51C0B5FC75044353 /* Pods_socialSecurity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialSecurity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61A557120691A20005B1CF0 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		A61A557220691A20005B1CF0 /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		A61A557420692250005B1CF0 /* UIColor+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		A61A557520692250005B1CF0 /* UIColor+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
 		A6569365206768070098FDF3 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		A6569366206768070098FDF3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		A6569368206768210098FDF3 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -352,8 +358,12 @@
 		A656938120677BD20098FDF3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A61A557120691A20005B1CF0 /* UIView+Utils.h */,
+				A61A557220691A20005B1CF0 /* UIView+Utils.m */,
 				A656938220677BF30098FDF3 /* UIImage+Extension.h */,
 				A656938320677BF30098FDF3 /* UIImage+Extension.m */,
+				A61A557420692250005B1CF0 /* UIColor+Util.h */,
+				A61A557520692250005B1CF0 /* UIColor+Util.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -557,8 +567,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-socialSecurity/Pods-socialSecurity-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MGJRouter/MGJRouter.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -567,8 +579,10 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGJRouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -631,8 +645,10 @@
 				A6569370206768870098FDF3 /* NewsViewController.m in Sources */,
 				A6FD1CAF206684A4002C1BA1 /* AppDelegate.m in Sources */,
 				A656936A206768210098FDF3 /* HomeViewController.m in Sources */,
+				A61A557320691A20005B1CF0 /* UIView+Utils.m in Sources */,
 				A656938B20678AEB0098FDF3 /* HomeViewModel.m in Sources */,
 				A6EBA9632067C3FD008C6F61 /* PushTool.m in Sources */,
+				A61A557620692250005B1CF0 /* UIColor+Util.m in Sources */,
 				A656938420677BF30098FDF3 /* UIImage+Extension.m in Sources */,
 				A6569376206768A00098FDF3 /* MineViewController.m in Sources */,
 				A6EBA9762067CB9C008C6F61 /* UITool.m in Sources */,
@@ -770,6 +786,7 @@
 			baseConfigurationReference = 4FC06980568AAD34A88B1456 /* Pods-socialSecurity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -791,6 +808,7 @@
 			baseConfigurationReference = F3120DAE628C482471A8A098 /* Pods-socialSecurity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;

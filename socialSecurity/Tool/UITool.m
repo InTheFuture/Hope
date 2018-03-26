@@ -30,4 +30,33 @@
     return button;
 }
 
+//创建ScrollView
++(UIScrollView *)createScrollViewWithFrame:(CGRect)frame showsHorizontalScrollIndicator:(BOOL)horizontalShow showsVerticalScrollIndicator:(BOOL)verticalShow bounces:(BOOL)isBounces delegate:(id)delegate {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:frame];
+    scrollView.backgroundColor = White;
+    scrollView.showsVerticalScrollIndicator = verticalShow;
+    scrollView.showsHorizontalScrollIndicator = horizontalShow;
+    scrollView.bounces = isBounces;
+    scrollView.delegate = delegate;
+    return scrollView;
+}
+
+//创建ImageView
++(UIImageView *)createImageViewWithFrame:(CGRect)frame image:(NSString *)imageName {
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:frame];
+    imageView.image = [UIImage imageNamed:imageName];
+    return imageView;
+}
+
+//创建Label
++(UILabel *)createLabelWithFrame:(CGRect)frame title:(NSString *)title font:(CGFloat)font textColor:(UIColor *)textColor text:(NSString *)text backGroundColor:(UIColor *)backGroundColor {
+    UILabel *label = [[UILabel alloc] initWithFrame:frame];
+    label.text = text;
+    label.textColor = textColor;
+    label.font = [UIFont systemFontOfSize:font];
+    label.backgroundColor = backGroundColor;
+    [label sizeToFit];
+    return label;
+}
+
 @end
