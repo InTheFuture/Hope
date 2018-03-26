@@ -24,6 +24,7 @@
     BaseTabbarController *tabBarVC = [[BaseTabbarController alloc] init];
     self.window.rootViewController = tabBarVC;
     [self.window makeKeyAndVisible];
+    NSLog(@"测试");
     //设置状态栏样式为白色
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
     return YES;
